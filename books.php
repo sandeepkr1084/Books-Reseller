@@ -46,7 +46,7 @@
                           </div>
                           <div class="col-sm-1"></div>
                           <div class="col-sm-3">
-                            <h6>Chat With Seller</h6>
+                            <h6>Chat With <?php echo $row["user_name"] ?></h6>
                             <br>
                           <a href="https://api.whatsapp.com/send? phone=<?php echo $row["user_phone"] ?>&text=Hello%21%20<?php echo $row["user_name"] ?>" class="float" target="_blank">
                                 <i class="fa fa-whatsapp my-float">
