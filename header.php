@@ -14,14 +14,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"  crossorigin="anonymous">
 
   <link rel="stylesheet" type="text/css" href="book_category.css">
-
+  
 
 
   <title>Books Resell</title>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="index.php">Books Resell</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
         <a class="nav-link" href="index.php">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="register-book.php">Sell Bokks</a>
+        <a class="nav-link" href="register-book.php">Sell Books</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="book_category.php">Buy Books</a>
