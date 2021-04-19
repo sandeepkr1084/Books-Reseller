@@ -21,11 +21,12 @@ $result = $conn->query($sql);
         ?>
 
         <div class="col-md-3">
-          <div class="profile-card-2">
-            <img src="<?php echo $row["image"] ?>" class="img img-responsive" height="200px" width="100%">
-            <div class="profile-name"><?php echo $row["name"] ?></div>
-            <div class="profile-username"></div>
-            <div class="profile-icons"><a href="books.php?category_id=<?php echo $row["id"] ?>" class="book_link">Get Books</a></div>
+          <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="<?php echo $row["image"] ?>" alt="Card image cap" height="300px" width="300px">
+          <div class="card-body">
+              <h4 class="card-title text-center"><?php echo $row["name"] ?></h4>
+              <a href="books.php?category_id=<?php echo $row["id"] ?>" class="btn btn-danger btn-block">Click</a>
+          </div>
           </div>
         </div>
 
