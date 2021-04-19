@@ -120,7 +120,7 @@ session_start();
 				<span>or use your account</span>
 				<input type="email" name="email" placeholder="Email" />
 				<input type="password" name="password" placeholder="Password" />
-				<a href="#">Forgot your password?</a>
+				<a href="forgot_password.php">Forgot your password?</a>
 				<input type="submit" name="signin" value="Sign In" class="button">
 			</form>
 		</div>

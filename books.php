@@ -1,6 +1,10 @@
 <?php include 'header.php' ?>
 <?php include 'connection.php' ?>
-
+<?php 
+    if(!isset($_SESSION["user"])){
+        header( "location: login.php");
+    }
+?>
 <?php 
     if(!isset($_GET["category_id"])){
         header( "location: login.php");

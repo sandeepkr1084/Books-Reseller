@@ -61,8 +61,6 @@
 
 
 
-
-
     <section id="mu-hero">
       <div class="container">
         <div class="row">
@@ -87,6 +85,23 @@
                ?>
               <a href="login.php" class="mu-primary-btn">Login Now!</a>
               <?php } ?>
+
+              <?php
+                if(isset($_SESSION["user"])){
+               ?>
+              <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" style="display: inline-block;">
+                <button name="signoff" type="submit" style="cursor: pointer;" class="mu-primary-btn">Login out!</button>
+              </form>
+              <?php } ?>
+
+
+<?php
+if(isset($_POST["signoff"])){
+         session_destroy();
+         header( "location: index.php", true, 303);
+      }
+?>
+
               <a href="#mu-pricing" class="mu-primary-btn">READ BOOKS</a>
               <span>*Avaliable in PDF, ePUB, Mobi & Kindle.</span>
             </div>

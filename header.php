@@ -37,6 +37,26 @@
       <li class="nav-item">
         <a class="nav-link" href="book_category.php">Buy Books</a>
       </li>
+      <?php
+      session_start();
+      if(isset($_SESSION["user"])){
+      	?>
+      <li class="nav-item">
+      	<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="post" style="display: inline-block;">
+      		<button name="signoff" type="submit" class="btn nav-link">Login out!</button>
+      	</form>
+      </li>
+
+      <?php } ?>
+
+
+      <?php
+      if(isset($_POST["signoff"])){
+      	session_destroy();
+      	header( "location: index.php", true, 303);
+      }
+      ?>
+
     </ul>
   </div>
 </nav>
